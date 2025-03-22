@@ -58,7 +58,9 @@ Crypto Ballot is a blockchain-based voting platform that revolutionizes election
     ## Running the application:
 15. Go to the client directory and run ```npm run dev``` and don't close the terminal
 17. Open your browser and go to localhost:5173 or check the terminal what it says
-18. You need to install Metamask Browser extension and setup your account to continue
+18. You need to install Metamask Browser extension and create an account
+19. Add a custom network in the extension named ```localhost```, paste your RPC URL, chain ID: 31337, currency symbol: ETH, ignore the warnings
+20. Make sure when using the application, switch to the localhost network on your metamask extension
 
 
     ### I hope you saved all the files and the application is running. 
