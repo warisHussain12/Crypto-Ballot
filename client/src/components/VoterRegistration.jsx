@@ -212,6 +212,9 @@ const VoterRegistration = () => {
               {errors.profile_photo.message}
             </div>
           )}
+          <label style={{ color: "grey" }}>
+            Please upload your profile picture
+          </label>
           <input
             {...register("profile_photo", {
               required: { value: true, message: "You can't leave this blank" },
