@@ -5,9 +5,9 @@ require("dotenv").config();
 module.exports = {
   solidity: "0.8.28",
   networks: {
-    localhost: {
-      url: process.env.NETWORK_URL, // Local Hardhat network
-      accounts: [process.env.NETWORK_ACCOUNT_PRIVATE_KEY],
-    },
+    // localhost: {
+    //   url: process.env.NETWORK_URL,
+    //   accounts: [process.env.NETWORK_ACCOUNT_PRIVATE_KEY],
+    // },
   },
 };
