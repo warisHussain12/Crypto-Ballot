@@ -7,12 +7,12 @@ Crypto Ballot is a blockchain-based voting platform that revolutionizes election
 3. Open each sub-directory (client, server, smart_contract) in the terminal one by one and run ```npm install```
    
    ## Configuring deployment on blockchain:
-4. Open the directory smart_contract and run in the terminal ```npx hardhat compile```
-5. Now run ```npx hardhat node``` and copy the JSON-RPC server address and the private key of Account0 and paste in the .env file (omit the '0x' if there's a problem)
-6. Now in the file hardhat.config.js **uncomment** the localhost network declaration
+4. Open the directory **smart_contract** and run in the terminal ```npx hardhat compile```
+5. Now run ```npx hardhat node``` and copy the **JSON-RPC server address and the private key of Account0** and paste in the **.env** file (omit the '0x' if there's a problem)
+6. Now in the file **hardhat.config.js** **uncomment** the localhost network declaration
 7. Don't close the current terminal because here you will see the transaction status and the method that our application calls from blockchain
-8. Open another terminal and within the same directory, run ```npx hardhat run scripts/deploy.js --network localhost```, now copy the contract address and go to client/scr/utils/constants.js and paste it in contractAddress
-9. Also check in smart_contract/artifacts/contracts/ that there is a file created Elections.json, you can simply drag and move this file or copy it in the directory client/src/utils/ so that constants.js can fetch the abi (Application Binary Interface)
+8. Open another terminal and within the same directory, run ```npx hardhat run scripts/deploy.js --network localhost```, now copy the contract address and go to ```client/scr/utils/constants.js``` and paste it in **contractAddress**
+9. Also check in ```smart_contract/artifacts/contracts/``` that there is a file created **Elections.json**, you can simply drag and move this file or copy it in the directory ```client/src/utils/``` so that **constants.js** can fetch the **abi** (Application Binary Interface)
     
     ## Running the server:
 10. Go to the link: https://dev.mysql.com/downloads/installer/ and install the one which appears like
@@ -53,13 +53,13 @@ Crypto Ballot is a blockchain-based voting platform that revolutionizes election
 
     ```
     
-14. Now go the server directory and configure the .env file, now run ```npm run dev``` and don't close the terminal
+14. Now go the **server** directory and configure the **.env** file, now run ```npm run dev``` and don't close the terminal
 
     ## Running the application:
-15. Go to the client directory and run ```npm run dev``` and don't close the terminal
-17. Open your browser and go to **localhost:5173** or check the terminal what it says
-18. You need to install Metamask Browser extension and create an account
-19. Add a custom network in the extension named ```localhost```, paste your RPC URL from your smart_contract terminal, chain ID: 31337, currency symbol: ETH, ignore the warnings and save
+15. Go to the **client** directory and run ```npm run dev``` and don't close the terminal
+17. Open your browser and go to ```localhost:5173``` or check the **client** terminal what it says
+18. You need to install **Metamask Browser** extension and create an account
+19. Add a custom network in the extension named ```localhost```, paste your RPC URL from your **smart_contract** terminal, chain ID: ```31337```, currency symbol: ```ETH```, ignore the warnings and save
 20. Make sure when using the application, switch to the localhost network on your metamask extension
 
 
