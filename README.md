@@ -11,7 +11,7 @@ Crypto Ballot is a blockchain-based voting platform that revolutionizes election
 5. Now run ```npx hardhat node``` and copy the **JSON-RPC server address and the private key of Account0** and paste in the **.env** file (omit the '0x' if there's a problem)
 6. Now in the file **hardhat.config.js** **uncomment** the localhost network declaration
 7. Don't close the current terminal because here you will see the transaction status and the method that our application calls from blockchain
-8. Open another terminal and within the same directory, run ```npx hardhat run scripts/deploy.js --network localhost```, now copy the contract address and go to ```client/scr/utils/constants.js``` and paste it in **contractAddress**
+8. Open another terminal and within the same directory, run ```npx hardhat run scripts/deploy.js --network localhost```, now copy the contract address and go to ```client/src/utils/constants.js``` and paste it in **contractAddress**
 9. Also check in ```smart_contract/artifacts/contracts/``` that there is a file created **Elections.json**, you can simply drag and move this file or copy it in the directory ```client/src/utils/``` so that **constants.js** can fetch the **abi** (Application Binary Interface)
     
     ## Running the server:
