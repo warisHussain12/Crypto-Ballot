@@ -1,12 +1,12 @@
 # Crypto-Ballot
-Crypto Ballot is a modern platform to revolutionize the process of voting in elections.
+Crypto Ballot is a blockchain-based voting platform that revolutionizes elections by ensuring secure, transparent, and tamper-proof voting. This project uses Hardhat to simulate a real blockchain network for development and testing.
 
 ## To run the project:
 1. Download the whole directory
 2. Open the directory in any Code Editor like VSCode
 3. Open each sub-directory (client, server, smart_contract) in the terminal one by one and run ```npm install```
    
-   ## Configuring deployment on blockchain:
+   ## Configuring deployment on blockchain (hardhat simulates):
 4. Open the directory smart_contract and run in the terminal ```npx hardhat compile```
 5. Now run ```npx hardhat node``` and copy the JSON-RPC server address and the private key of Account0 and paste in the .env file (omit the '0x' if there's a problem)
 6. Now in the file hardhat.config.js uncomment the localhost network declaration
