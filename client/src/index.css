@@ -1,0 +1,646 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.NotFoundPage {
+  margin-top: 4rem;
+  font-weight: 500;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.NavBar {
+  .navbar {
+    background-color: rgb(17, 20, 14);
+    height: 3rem;
+    font-size: 1.2rem;
+  }
+
+  .navbar__ul {
+    color: white;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.8rem;
+  }
+
+  .navbar__ul__li {
+  }
+
+  .navbar__ul__li a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+  }
+}
+
+.Home {
+  .home__h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+  .home__buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .home__button {
+    background-color: rgb(17, 20, 14);
+    display: flex;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    width: 12rem;
+    justify-content: center;
+    /* transition: background-color 0.3s ease; */
+  }
+
+  .home__walletConnectedMessage {
+    margin: 1rem 1rem 3rem 1rem;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .walletAddress {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: cadetblue;
+    word-break: break-all;
+    /* Ensures long wallet addresses don't overflow */
+  }
+
+  .register {
+    display: flex;
+    justify-content: center;
+    /* Center the button horizontally */
+    margin: 1rem auto;
+    /* Center the button with automatic margins */
+    text-decoration: none;
+    /* Remove underline from link */
+  }
+
+  .home__else__div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center the content horizontally */
+    text-align: center;
+    /* Center the text */
+  }
+
+  .home__else__div a {
+    text-decoration: none;
+  }
+  .home__else__div a:hover {
+    text-decoration: underline;
+    color: cadetblue;
+  }
+
+  /* Government Document Style */
+  .gov-card {
+    width: 400px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 16px;
+    font-family: "Times New Roman", serif;
+    color: #222;
+    position: relative;
+    display: flex;
+    gap: 16px;
+  }
+
+  .gov-card__image-container {
+    width: 100px;
+    flex-shrink: 0;
+  }
+
+  .gov-card__image {
+    width: 100%;
+    border-radius: 10%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+  }
+
+  .gov-card__content {
+    flex-grow: 1;
+  }
+
+  .gov-card__watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.05;
+    font-size: 100px;
+    font-weight: bold;
+    pointer-events: none;
+  }
+
+  .gov-card__header {
+    text-align: center;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #222;
+    padding-bottom: 8px;
+  }
+
+  .gov-card__title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .gov-card__subtitle {
+    font-size: 14px;
+    margin: 4px 0 0;
+  }
+
+  .gov-card__details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .gov-card__row {
+    display: flex;
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 6px;
+  }
+
+  .gov-card__label {
+    width: 40%;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .gov-card__value {
+    width: 60%;
+    font-size: 14px;
+  }
+
+  .gov-card__footer {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 12px;
+  }
+
+  .gov-card__signature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gov-card__sign-line {
+    width: 100px;
+    border-bottom: 1px solid #222;
+    margin-bottom: 4px;
+  }
+
+  .gov-card__sign-title {
+    font-size: 10px;
+  }
+
+  .gov-card__stamp {
+    border: 1px dashed #666;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 10px;
+    text-align: center;
+    transform: rotate(-15deg);
+  }
+}
+
+.VoterRegistration {
+  .voterRegistration__h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .voterRegistration__h2 {
+    text-align: center;
+  }
+
+  .voterRegistration__form__unsubmitted {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    /* margin-bottom: 2rem; */
+  }
+  .voterRegistration__form__submitted {
+    display: none;
+  }
+
+  .voterRegistration__input {
+    text-align: center;
+    width: 40%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+  }
+  /* Specific styling for file input */
+  .voterRegistration__input[type="file"] {
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    display: block; /* Ensure it behaves like a block element */
+    margin-left: auto; /* Center the input */
+    margin-right: auto; /* Center the input */
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+  }
+
+  /* Optional: Style the file input button */
+  .voterRegistration__input[type="file"]::-webkit-file-upload-button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+  }
+
+  .voterRegistration__input[type="file"]::file-selector-button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+  }
+  .voterRegistration__button {
+    background-color: rgb(17, 20, 14);
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    /* transition: background-color 0.3s ease; */
+  }
+
+  .voterRegistration__loading {
+    text-align: center;
+    font-size: 3rem;
+  }
+}
+
+.registration__error__message {
+  color: rgb(236, 79, 79);
+}
+
+.CandidateRegistration {
+  .candidateRegistration__h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .candidateRegistration__h2 {
+    text-align: center;
+  }
+  .candidateRegistration__form__unsubmitted {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    /* margin-bottom: 2rem; */
+  }
+  .candidateRegistration__form__submitted {
+    display: none;
+  }
+
+  .candidateRegistration__input {
+    text-align: center;
+    width: 40%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+  }
+  .candidateRegistration__input[type="file"] {
+    /* box-sizing: border-box; Ensure padding and border are included in the width */
+    display: block; /* Ensure it behaves like a block element */
+    margin-left: auto; /* Center the input */
+    margin-right: auto; /* Center the input */
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+  }
+
+  /* Optional: Style the file input button */
+  .candidateRegistration__input[type="file"]::-webkit-file-upload-button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+  }
+
+  .candidateRegistration__input[type="file"]::file-selector-button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+  }
+
+  .manifesto {
+  }
+
+  .candidateRegistration__button {
+    background-color: rgb(17, 20, 14);
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    /* transition: background-color 0.3s ease; */
+  }
+
+  .candidateRegistration__loading {
+    text-align: center;
+    font-size: 3rem;
+  }
+}
+
+.Vote {
+  .vote__h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+  .vote__h2 {
+    text-align: center;
+  }
+
+  .vote__table__candidate__image__footer {
+    margin: 0.5rem 0 0 0; /* Add spacing above the name */
+    text-align: center; /* Center the name */
+    width: 100%; /* Ensure the name takes full width */
+    word-wrap: break-word; /* Allow long names to wrap */
+    overflow-wrap: break-word; /* Ensure text wraps properly */
+  }
+
+  .vote__table__candidate__image__container {
+    width: 100px;
+    flex-shrink: 0;
+    text-align: center;
+  }
+
+  .vote__table__candidate__image {
+    width: 100%;
+    border-radius: 10%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+  }
+
+  .vote__table__container {
+    width: 100%;
+    max-width: 40rem;
+    margin: 2rem auto;
+    overflow-x: auto;
+  }
+
+  .vote__table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+
+  .vote__table__thead {
+    border-bottom: 0.15rem solid #ddd;
+  }
+
+  .vote__table__tr {
+    border-bottom: 0.1rem solid #eee;
+  }
+
+  .vote__table__td,
+  .vote__table th {
+    padding: 1em 1.5em;
+  }
+
+  .vote__table__button {
+    padding: 0.5em 1em;
+    border-radius: 0.25rem;
+    border: 0.1rem solid #333;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .vote__table__button:hover {
+    transform: translateY(-0.15rem);
+  }
+
+  /* Additional styles for voting confirmation */
+  .vote-confirmation {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 24px;
+    margin: 20px auto;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .vote-confirmation__text {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .vote-confirmation__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .vote__table__button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    background-color: #2c65b1;
+    color: white;
+    transition: background-color 0.2s;
+  }
+
+  .vote__table__button:hover {
+    background-color: #1a4a8f;
+  }
+
+  .vote__table__button--confirm {
+    background-color: #17aa5c;
+  }
+
+  .vote__table__button--confirm:hover {
+    background-color: #128a49;
+  }
+
+  .vote__table__button--cancel {
+    background-color: #e91d0e;
+  }
+
+  .vote__table__button--cancel:hover {
+    background-color: #c91107;
+  }
+
+  .voted-for {
+    color: #17aa5c;
+    font-weight: bold;
+  }
+
+  .not-selected {
+    color: #888;
+  }
+}
+
+.Results {
+  .results__h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+  /* Election Results Styling */
+  .results__table__container {
+    font-family: "Georgia", serif;
+    margin: 2rem auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .results__table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+
+  .results__table__thead {
+    background-color: #112e51; /* Dark blue - traditional election color */
+    color: rgb(64, 1, 1); /* Changed from black to white for better contrast */
+  }
+
+  .results__table__th {
+    padding: 16px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid #e4e4e4;
+  }
+
+  .results__table__th:first-child {
+    text-align: left;
+  }
+  .results__table__th:last-child {
+    text-align: right;
+  }
+
+  .results__table__tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+
+  .results__table__tr:hover {
+    background-color: #f1f1f1;
+  }
+
+  .results__table__td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #e4e4e4;
+  }
+
+  .results__table__td--candidate {
+    font-weight: bold;
+  }
+
+  .results__table__td--party {
+    color: #555;
+  }
+
+  .results__table__td--votes {
+    font-weight: bold;
+    text-align: right;
+  }
+
+  /* Party color indicators */
+  /* .results__table__td--party[data-party="Congress"] {
+    border-left: 4px solid #e91d0e;
+  }
+
+  .results__table__td--party[data-party="BJP"] {
+    border-left: 4px solid #2c65b1;
+  }
+
+  .results__table__td--party[data-party="Independent"] {
+    border-left: 4px solid #ffcc00;
+  }
+
+  .results__table__td--party[data-party="AAP"] {
+    border-left: 4px solid #17aa5c;
+  }
+
+  .results__table__td--party[data-party="SJP"] {
+    border-left: 4px solid #d97638;
+  } */
+
+  /* For winning candidate highlight */
+  .results__table__tr--winner {
+    background-color: #f8f8e8;
+  }
+
+  .results__table__tr--winner .results__table__td--candidate::after {
+    content: "✓";
+    color: green;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .results__candidate__image__container {
+    width: 100px;
+    flex-shrink: 0;
+    text-align: center;
+  }
+
+  .results__candidate__image {
+    width: 100%;
+    border-radius: 10%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+  }
+
+  .results__candidate__image__footer {
+    margin: 0.5rem 0 0 0; /* Add spacing above the name */
+    text-align: center; /* Center the name */
+    width: 100%; /* Ensure the name takes full width */
+    word-wrap: break-word; /* Allow long names to wrap */
+    overflow-wrap: break-word; /* Ensure text wraps properly */
+  }
+}
