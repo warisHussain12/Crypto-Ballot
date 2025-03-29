@@ -53,10 +53,11 @@ Crypto Ballot is a blockchain-based voting platform that revolutionizes election
 
     ```
     
-14. Now go the **server** directory and configure the **.env** file, now run ```npm run dev``` and don't close the terminal
+14. Create an uploads folder under server directory. 
+15. Now go the **server** directory and configure the **.env** file, now run ```npm run dev``` and don't close the terminal
 
     ## Running the application:
-15. Go to the **client** directory and run ```npm run dev``` and don't close the terminal
+16. Go to the **client** directory and run ```npm run dev``` and don't close the terminal
 17. Open your browser and go to ```localhost:5173``` or check the **client** terminal what it says
 18. You need to install **Metamask** Browser extension and create an account
 19. Add a custom network in the extension named ```localhost```, paste your RPC URL from your **smart_contract** terminal, chain ID: ```31337```, currency symbol: ```ETH```, ignore the warnings and save
